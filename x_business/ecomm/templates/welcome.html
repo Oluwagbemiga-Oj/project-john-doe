@@ -1,0 +1,29 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="{% static 'css/create_store.css' %}">
+        <title>Welcome Aboard</title>
+    </head>
+
+    <body>
+        <div class="welcome-container">
+            <h1>Welcome Aboard!</h1>
+            <div class="welcome-content">
+                <p class="greeting">Warmly welcome to our platform where your retail journey begins.</p>
+                <p class="introduction">Explore and create your online storefront with us. Our platform provides you with the tools and resources needed to showcase your products, connect with customers, and build a successful online business. Whether you're a small boutique or a growing enterprise, we're here to support your journey in creating a captivating and efficient storefront experience for your customers.</p>
+                <button id="showStorefrontBtn">Show Storefront Details</button>
+            </div>
+        </div>
+
+        <div id="storefrontPrompt" class="storefront-prompt">
+            <!-- This is initially hidden and will be shown on button click -->
+            <!-- Content will be dynamically loaded here -->
+        </div>
+
+        <script src='{% static "js/create_store.js" %}'></script>
+    </body>
+</html>
+

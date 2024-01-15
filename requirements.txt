@@ -1,0 +1,14 @@
+flask
+pymongo
+requests
+cryptography
+Flask-Caching
+flask_mail
+boto3
+django
+djongo
+action="{% url 'add_new_store' %}"
+{% extends "layout.html" %}
+
+{% block content %}
+{% endblock %}

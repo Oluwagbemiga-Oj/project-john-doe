@@ -1,0 +1,30 @@
+<h2>Storefront Details:</h2>
+
+<div id="successMessageContainer"></div>
+
+<form id="storefrontForm" method="POST">
+    {% csrf_token %}
+    <label for="businessName">1. Upload Business Name:</label>
+    <input type="text" id="businessName" name="businessName" required>
+
+    <label for="businessDescription">2. Business Description:</label>
+    <textarea id="businessDescription" name="businessDescription" required></textarea>
+
+    <label for="productCategories">3. Categories of the Product:</label>
+    <input type="text" id="productCategories" name="productCategories" required>
+
+    <label for="colorPalette">5. Color Palette:</label>
+    <input type="text" id="colorPalette" name="colorPalette" required>
+
+    <label for="tagline">6. Tagline:</label>
+    <input type="text" id="tagline" name="tagline" required>
+
+    <label for="instagram">7. Instagram:</label>
+    <input type="text" id="instagram" name="instagram">
+
+    <label for="twitter">8. Twitter:</label>
+    <input type="text" id="twitter" name="twitter">
+
+    <button type="submit">Submit</button>
+</form>
+

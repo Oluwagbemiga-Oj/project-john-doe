@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Projectx</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/layout.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+  <div class="navbar">
+    <div class="nav-item">
+        <a href="/home">
+            <i class="fas fa-home"></i>
+        <span>Home</span>
+      </a>
+    </div>
+    <div class="nav-item">
+        <a href="/search">
+            <i class="fas fa-search"></i>
+        <span>Search</span>
+      </a>
+    </div>
+    <div class="nav-item active">
+        <a href="/appointment">
+            <i class="fas fa-calendar"></i>
+          <span>Appointments</span>
+        </a>
+    </div>
+    <div class="nav-item">
+        <a href="/cart">
+            <i class="fas fa-shopping-cart"></i>
+          <span>Cart</span>
+        </a>
+    </div>
+    <div class="nav-item">
+        <a href="/profile">
+            <i class="fas fa-user"></i>
+        <span>Profile</span>
+      </a>
+    </div>
+  </div>
+  <div class="content">
+        <!-- Content of each page will be inserted here -->
+        {% block content %}{% endblock %}
+  </div>
+</body>
+</html>
