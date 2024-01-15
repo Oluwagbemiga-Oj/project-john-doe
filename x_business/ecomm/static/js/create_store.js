@@ -34,6 +34,7 @@ document.getElementById('showStorefrontBtn').addEventListener('click', function(
                         // Hide the success message after 3 seconds
                         setTimeout(function() {
                             successMessageContainer.innerHTML = '';
+                            window.location.href = '/home';
                         }, 3000);
                     } else {
                         // Handle other response scenarios if needed

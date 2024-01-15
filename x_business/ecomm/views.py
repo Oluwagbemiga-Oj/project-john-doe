@@ -8,6 +8,27 @@ def ecomm(request):
     template = loader.get_template("new_store.html")
     return HttpResponse(template.render())
 
+def home(request):
+    return render(request, 'home.html')
+
+def inventory(request):
+    return render(request, 'inventory.html')
+
+def store(request):
+    return render(request, 'store.html')
+
+def search(request):
+    return render(request, 'search.html')
+
+def cart(request):
+    return render(request, 'cart.html')
+
+def profile(request):
+    return render(request, 'profile.html')
+
+def marketplace(request):
+    return render(request, 'marketplace.html')
+
 def welcome(request):
     template = loader.get_template("welcome.html")
     return HttpResponse(template.render())

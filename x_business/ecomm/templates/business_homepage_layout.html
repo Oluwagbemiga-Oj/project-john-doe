@@ -5,43 +5,50 @@
     {% load static %}
     <link rel="stylesheet" href="{% static 'css/layout.css' %}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.6/css/unicons.css">
 </head>
 <body>
   <div class="navbar">
     <div class="nav-item">
         <a href="/home">
-            <i class="fas fa-home"></i>
-        <span>Home</span>
+          <i class="uil uil-home"></i>
+        <span>home</span>
       </a>
     </div>
     <div class="nav-item">
-      <a href="/my_store">
-          <i class="fas fa-store"></i>
-      <span>My Store</span>
-    </a>
-  </div>
+      <a href="/store">
+          <i class="uil uil-store"></i>
+        <span>my store</span>
+      </a>
+    </div>
+    <div class="nav-item">
+      <a href="/marketplace">
+          <i class="uil uil-shopping-bag"></i>
+        <span>explore market</span>
+      </a>
+    </div>
     <div class="nav-item">
         <a href="/search">
-            <i class="fas fa-search"></i>
-        <span>Search</span>
+            <i class="uil uil-search-alt"></i>
+        <span>search</span>
       </a>
     </div>
-    <div class="nav-item active">
+    {% comment %} <div class="nav-item active">
         <a href="/appointment">
             <i class="fas fa-calendar"></i>
           <span>Appointments</span>
         </a>
-    </div>
+    </div> {% endcomment %}
     <div class="nav-item">
         <a href="/cart">
-            <i class="fas fa-shopping-cart"></i>
-          <span>Cart</span>
+            <i class="uil uil-shopping-cart-alt"></i>
+          <span>cart</span>
         </a>
     </div>
     <div class="nav-item">
         <a href="/profile">
-            <i class="fas fa-user"></i>
-        <span>Profile</span>
+            <i class="uil uil-user-circle"></i>
+        <span>profile</span>
       </a>
     </div>
   </div>
